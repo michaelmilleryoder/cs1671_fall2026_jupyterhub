@@ -14,7 +14,7 @@ name = "class-env"
 version = "0.1.0"
 
 [tool.pixi.workspace]
-channels = ["conda-forge", "r", "huggingface"]
+channels = ["conda-forge", "r"]
 platforms = ["linux-64", "win-64", "osx-arm64"]
 
 [tool.pixi.tasks]
