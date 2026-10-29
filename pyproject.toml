@@ -8,7 +8,10 @@ dependencies = [
 "openai==2.32.0", 
 "pyserini", 
 "sentence-transformers==5.4.1", 
-"sentencepiece==0.2.1", 
+"sentencepiece==0.2.1",
+"python-dotenv>=1.2.4,<2",
+"safetensors>=0.8.0,<0.9",
+"datasets>=2.20.0", 
 ]
 name = "class-env"
 version = "0.1.0"
@@ -17,7 +20,8 @@ version = "0.1.0"
 channels = ["conda-forge", "r"]
 platforms = ["linux-64", "win-64", "osx-arm64"]
 
-[tool.pixi.tasks]
+[tool.pixi.constraints]
+fsspec = ">=2023.1.0,<=2026.7.0"
 
 [tool.pixi.dependencies]
 ipykernel = "*"
@@ -30,3 +34,5 @@ tokenizers = "*"
 python = "3.11.*"
 nltk = ">=3.10.3,<4"
 jupyterhub = "5.2.1.*"
+gensim = ">=4.4.0,<5"
+spacy = ">=3.8.14,<4"
